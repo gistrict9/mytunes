@@ -27,9 +27,6 @@
         var library = new Songs(songData);
         var app = new AppModel({library: library});
 
-        // set up collections
-        var queue = new SongQueue(songData);
-
         // build a view for the top level of the whole app
         var appView = new AppView({model: app});
 
